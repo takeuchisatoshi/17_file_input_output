@@ -1,5 +1,5 @@
 def main():
-    f = open("sale.csv", mode="w")
+    f = open("sale.csv", mode="a")
 
     f.write("1月,150万円\n")
     f.write("2月,60万円\n")

@@ -1,11 +1,12 @@
 def main():
     f = open("user_data.csv", mode="r")
-    print(type(f))
+    # print(type(f))
 
     data = f.read()
-    print(type(data))
+    print("close()する前", f.closed)
 
     f.close()
+    print("close()した後", f.closed)
 
     print(data)
 
